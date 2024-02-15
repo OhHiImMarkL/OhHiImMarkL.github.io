@@ -1,9 +1,233 @@
+<!DOCTYPE html>
 <html>
-
-<body>
-  <h1>Mark</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
-
+    <head>
+        <title>Codecademy Cheatsheet</title>
+        <link href="resources/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="banner-title legendary">Cheatsheet</h1>
+        </header>
+        <main>
+            <section>
+                <h2 class="section-title" id="HTML">HTML</h2>
+                <article> 
+                    <table>
+                        <h3 class="article-title">Common tags</h3>
+                        <tr>
+                            <th class="table-title">Tag</th>
+                            <th class="table-extra-wide">Name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;!DOCTYPE html&gt;</pre></td>
+                            <td>Document Type</td>
+                            <td>Used to inform the browser about the version of HTML being used. Found at first line in source.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;head&gt;</pre></td>
+                            <td>-</td>
+                            <td>Section in HTML document used to provide metadata like titles, stylesheets and other info about the page.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;body&gt;</pre></td>
+                            <td>-</td>
+                            <td>Contains the actual HTML elements and content that the user interacts with.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;h1&gt; - &lt;h6&gt;</pre></td>
+                            <td>-</td>
+                            <td>Header text used to provide titles for pages or sections/articles. Higher number equals smaller fontsize.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;embed&gt;</pre></td>
+                            <td>-</td>
+                            <td>Places external content like a picture, video or audio source within the webpage. Does not care about the type of content provided.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;table&gt;</pre></td>
+                            <td>-</td>
+                            <td>Contains the actual HTML elements and content that the user interacts with.</td>
+                        </tr>
+                        <tr id="a">
+                            <td><pre>&lt;a&gt;</pre></td>
+                            <td>Anchor</td>
+                            <td>Defines a hyperlink, used to link from one page to another. Most important attribute is href.</td>
+                        </tr>
+                    </table>
+                </article>
+                <article> 
+                    <table>
+                        <h3 class="article-title">Common attributes</h3>
+                        <tr>
+                            <th class="table-title">Tag</th>
+                            <th class="table-extra-wide">Name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><pre>class</pre></td>
+                            <td>-</td>
+                            <td>Specifies which classnames in a style sheet the HTML element is subject to.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>href</pre></td>
+                            <td>Hypertext Reference</td>
+                            <td>Used to define the destination of the hyperlink, commonly used in <strong>a, link</strong> tags.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>src</pre></td>
+                            <td>Source</td>
+                            <td>Used to define the location of the external resource. Used with <strong>audio, embed, iframe, img, input, script, source, track, video</strong> tags</td>
+                        </tr>
+                        <tr>
+                            <td><pre>id</pre></td>
+                            <td>Identifier</td>
+                            <td>Specifies a unique ID for an HTML element. The given ID to any element must be globally unique within the document.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>type</pre></td>
+                            <td>-</td>
+                            <td>Specifies a variation of a button or input element. For <strong>embed, link, object, script, source, style</strong> tags it specifies the media type.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>alt</pre></td>
+                            <td>Alternate</td>
+                            <td>Specifies an alternate text for an image if the image cannot be displayed.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>target</pre></td>
+                            <td>-</td>
+                            <td>Specifies where to open the linked document or resource.</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <h3 class="article-title">Semantic tags</h3>
+                    <table>
+                        <tr>
+                            <th class="table-title">Tag</th>
+                            <th class="table-extra-wide">Name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;header&gt;</pre></td>
+                            <td>-</td>
+                            <td>Usually contains introductionary content or a navbar to help the user around the page.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;main&gt;</pre></td>
+                            <td>-</td>
+                            <td>Contains the main content of a given page. Content within should be unique to the document. The main element cannot be a descendant of other semantic tags.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;footer&gt;</pre></td>
+                            <td>-</td>
+                            <td>Usually contains copyright or authorship information and where to contact the page owner alongside other useful links.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;section&gt;</pre></td>
+                            <td>-</td>
+                            <td>Defines a section within a document, improving SEO and accessibility to screenreaders.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;article&gt;</pre></td>
+                            <td>-</td>
+                            <td>The article tag is used for self-contained independent content like a forum post or news story.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;aside&gt;</pre></td>
+                            <td>-</td>
+                            <td>The aside tag is used for content aside from the content it is placed in, like a sidebar. Has no special properties.</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            <section>
+                <h2 class="section-title" id="CSS">CSS</h2>
+                <article>
+                    <h3 class="article-title">Text & Elements</h3>
+                    <table>
+                        <tr>
+                            <th class="table-title">Property</th>
+                            <th class="table-extra-wide">Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><pre>font-family</pre></td>
+                            <td>"Arial", serif, sans-serif</td>
+                            <td>The font being used for a given HTML element, if given font can't be found browser will use a websafe font.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>font-size</pre></td>
+                            <td>10px, large, 150%</td>
+                            <td>Determines the size of text of the element.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>text-align</pre></td>
+                            <td>left, center, right</td>
+                            <td>Determines the alignment of the text within it's parent element</td>
+                        </tr>
+                        <tr>
+                            <td><pre>color</pre></td>
+                            <td>#FFFFFF, HSL(a), RGB(a)</td>
+                            <td>Determines the foreground color of the element.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>background-color</pre></td>
+                            <td>#FFFFFF, HSL(a), RGB(a)</td>
+                            <td>Determines the background color of the element.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>position</pre></td>
+                            <td>static, relative</td>
+                            <td>Used to inform the browser about the version of HTML being used.</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <h3 class="article-title">Flexbox</h3>
+                    <table>
+                        <tr>
+                            <th class="table-title">Tag</th>
+                            <th class="table-extra-wide">Name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;header&gt;</pre></td>
+                            <td>DOCTYPE</td>
+                            <td>Used to inform the browser about the version of HTML being used. Found at first line in source.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;main&gt;</pre></td>
+                            <td>Head</td>
+                            <td>Section in HTML document used to provide metadata like titles, stylesheets and other info about the page.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;footer&gt;</pre></td>
+                            <td>Body</td>
+                            <td>Contains the actual HTML elements and content that the user interacts with.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;section&gt;</pre></td>
+                            <td>Headers</td>
+                            <td>Header text used to provide titles for pages or sections/articles. Higher number equals smaller fontsize.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;article&gt;</pre></td>
+                            <td>DOCTYPE</td>
+                            <td>Used to inform the browser about the version of HTML being used.</td>
+                        </tr>
+                        <tr>
+                            <td><pre>&lt;aside&gt;</pre></td>
+                            <td>DOCTYPE</td>
+                            <td>Used to inform the browser about the version of HTML being used.</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+        </main>
+    </body>
 </html>
