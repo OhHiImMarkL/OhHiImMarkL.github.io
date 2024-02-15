@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1F1F1F;
+    color: whitesmoke;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+}
+
+.banner-title {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: serif;
+    padding: 25px 0;
+    font-family: "Protest Revolution", sans-serif;
+    background-color:  #8f1d1d;
+}
+
+.section-title {
+    margin-top: 40px;
+    padding: 10px 0;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+section:first-of-type {
+    margin-top: 180px;
+}
+
+.table-title {
+    width: 150px;
+}
+
+.table-extra-wide {
+    width: 250px;
+}
+
+.article-title {
+    margin-top: 40px;
+}
+
+table {
+    border-spacing: 0px;
+    width: 50%;
+    min-width: 500px;
+    margin: 10px auto;
+}
+
+th, td {
+    padding: 10px 25px;
+}
+
+tr:nth-child(even) {
+    background-color: #2F2F2F;
+}
